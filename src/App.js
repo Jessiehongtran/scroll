@@ -3,7 +3,7 @@ import All from './all';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <All />
     </div>
   );

@@ -1,6 +1,22 @@
 .App {
   text-align: center;
   font-family: 'Cabin', sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+.App::-webkit-scrollbar{
+  display: none;
+} 
+
+#container {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+
+
+#container::-webkit-scrollbar {
+  display: none;
 }
 
 .App-logo {

@@ -1,5 +1,6 @@
 import React from 'react';
-import Word from './components/word'
+import Word from './components/word';
+import './App.css'
 
 
 export default class All extends React.Component {
@@ -36,10 +37,13 @@ export default class All extends React.Component {
             pos: {
                 x: 0,
                 y: 0
-            }
+            },
+            mouseX: 0,
+            mouseY: 0
         }
 
         this.handleMouseWheel = this.handleMouseWheel.bind(this)
+        
     }
 
     componentDidMount(){
@@ -66,15 +70,15 @@ export default class All extends React.Component {
 
     render(){
 
-        const { words } = this.state;
+        const { words, mouseX, mouseY } = this.state;
 
         return (
             <div 
                 id="container"
-                style={{ touchAction: 'none', overflowY: 'hidden', minHeight: '100vh', display: 'flex', width: `${words.length*100}vw` }}
-                
+                style={{ position: 'relative', cursor: 'none', touchAction: 'none', overflowY: 'hidden', minHeight: '100vh', display: 'flex', width: `${words.length*100}vw` }}
             >
                 {words.map(word => <Word text={word.text} color={word.color} bgColor={word.bgColor}  />)}
+                
             </div>
         )
     }
