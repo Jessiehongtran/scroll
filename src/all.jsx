@@ -58,8 +58,8 @@ export default class All extends React.Component {
         // console.log('x', window.pageXOffset, 'y', window.pageYOffset)
         let { pos } = this.state;
 
-        if (e.deltaY > 0) pos.x += 20;
-        else pos.x -= 20;
+        if (e.deltaY > 0) pos.x += 25;
+        else pos.x -= 25;
 
         pos.y = window.pageYOffset
 
