@@ -16,7 +16,7 @@ export default class Word extends React.Component {
 
         return (
             <div>
-                <div style={{ width: '100vw', height: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', alignItems: 'center', color: `${color}`, backgroundColor: `${bgColor}`, fontSize: '60px' }}>
+                <div style={{ width: '100vw', height: '90vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: `${color}`, backgroundColor: `${bgColor}`, fontSize: '60px' }}>
                     <p>{text}</p>
                 </div>
                 <div style={{ height: '10vh', color: `${color}`, backgroundColor: `${bgColor}` }}>

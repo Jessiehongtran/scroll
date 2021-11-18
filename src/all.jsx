@@ -70,7 +70,7 @@ export default class All extends React.Component {
 
     render(){
 
-        const { words, mouseX, mouseY } = this.state;
+        const { words } = this.state;
 
         return (
             <div 
