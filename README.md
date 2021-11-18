@@ -2,7 +2,7 @@ Implement mouse scrolling effect
 
 ## Deployed version
 
-[]()
+[https://horizonscroll.netlify.app/](https://horizonscroll.netlify.app/)
 
 ## Expected outcome
 
