@@ -1,6 +1,6 @@
 import React from 'react';
 import Word from './components/word';
-import './App.css'
+import './App.css';
 
 
 export default class All extends React.Component {
@@ -77,7 +77,8 @@ export default class All extends React.Component {
                 id="container"
                 style={{ position: 'relative', cursor: 'none', touchAction: 'none', overflowY: 'hidden', minHeight: '100vh', display: 'flex', width: `${words.length*100}vw` }}
             >
-                {words.map(word => <Word text={word.text} color={word.color} bgColor={word.bgColor}  />)}
+                {words.map(word => <Word text={word.text} color={word.color} bgColor={word.bgColor}  />
+                )}
                 
             </div>
         )
